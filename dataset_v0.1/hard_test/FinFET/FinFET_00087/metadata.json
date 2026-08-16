@@ -1,0 +1,44 @@
+{
+  "architecture": "FinFET",
+  "search_size": [
+    1000,
+    1000
+  ],
+  "reference_size": [
+    100,
+    100
+  ],
+  "target_center_xy": [
+    760,
+    539
+  ],
+  "scale_relationship_nominal": 10.0,
+  "hard_case": true,
+  "geometry": {
+    "fin_pitch": 18,
+    "fin_width": 7,
+    "gate_pitch": 34,
+    "gate_width": 6,
+    "rotation_deg": 5.67105874444897
+  },
+  "reference_imaging": {
+    "blur_sigma": 0.6698828063108261,
+    "gaussian_sigma": 3.387835893555889,
+    "poisson_scale": 49,
+    "speckle": 0.015883433380791484,
+    "edge_brightening": 0.12138836538034606,
+    "gain": 0.9505668857201122
+  },
+  "search_imaging": {
+    "blur_sigma": 1.0107338537221318,
+    "gaussian_sigma": 8.293856970484875,
+    "poisson_scale": 29,
+    "speckle": 0.026848035054104134,
+    "edge_brightening": 0.19490222366052892,
+    "gain": 1.1059124466961767
+  },
+  "generator_version": "0.1.0",
+  "seed": 2061216739,
+  "pair_id": "FinFET_00087",
+  "split": "hard_test"
+}

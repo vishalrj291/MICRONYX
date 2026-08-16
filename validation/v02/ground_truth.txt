@@ -1,0 +1,53 @@
+MICRONYX Dataset Generator v0.2
+Step 5 — Controlled Local Fingerprint
+
+Physical scene:
+  width  = 200.0
+  height = 200.0
+
+Base geometry:
+  pitch      = 0.5
+  line_width = 0.2
+
+Fingerprint:
+  width  = 1.0
+  height = 1.0
+
+  defect_1_offset =
+    (-0.22, -0.18)
+
+  defect_2_offset =
+    (0.21, 0.17)
+
+  defect_width_increase =
+    0.12
+
+  defect_length =
+    0.38
+
+Search:
+  width  = 1000
+  height = 1000
+  pixels_per_unit =
+    5.0
+
+Reference:
+  width  = 100
+  height = 100
+  magnification =
+    10.0
+
+Target physical:
+  (75.25, 113.75)
+
+Target search:
+  (376.25, 568.75)
+
+Reference FOV origin:
+  (74.25, 112.75)
+
+Reference GT:
+  (50.0, 50.0)
+
+Ground-truth error:
+  (0.0, 0.0)

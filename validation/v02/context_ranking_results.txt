@@ -1,0 +1,25 @@
+MICRONYX CONTEXT-AWARE RANKING
+============================================================
+
+Ground truth: (376.25, 568.75)
+Top K: 20
+
+Context: 10x10
+Status: OK
+GT rank: 5
+Top candidate: (180.00, 780.00)
+Local score: 0.891856
+Context score: 0.891856
+
+Context: 20x20
+Status: SKIPPED
+
+Context: 40x40
+Status: SKIPPED
+
+Context: 80x80
+Status: SKIPPED
+
+Context: 120x120
+Status: SKIPPED
+

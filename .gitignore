@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python tooling
+.pytest_cache/
+.ruff_cache/
+
+# Large generated validation outputs
+validation/**/target_zoom.png
+validation/**/target_overlay.png
+validation/**/hard_negative_search.png
+validation/**/hard_negative_candidates.png
+validation/**/natural_periodic_search.png
+validation/**/natural_periodic_reference.png
+validation/**/natural_periodic_candidates.png
+validation/**/context_ranking_visualization.png
+
+# Generated experiment images
+validation/**/*.png
+validation/**/*.jpg
+validation/**/*.jpeg
+
+# Temporary files
+*.tmp
+*.log
+
+# Model/cache artifacts
+*.pkl
+*.joblib
+
+# Keep important model explicitly if desired
+!validation/v02/learned_ranker/xgboost_ranker.json
+!validation/v02/learned_ranker/feature_importance.json
