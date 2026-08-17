@@ -66,8 +66,8 @@ SEARCH_PIXELS_PER_UNIT_Y = (
 # REFERENCE
 # ============================================================
 
-REFERENCE_WIDTH = 100
-REFERENCE_HEIGHT = 100
+REFERENCE_WIDTH = 1000
+REFERENCE_HEIGHT = 1000
 
 MAGNIFICATION = 10.0
 

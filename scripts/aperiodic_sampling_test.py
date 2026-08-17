@@ -45,12 +45,12 @@ OUTPUT_RESULTS = (
 # ============================================================
 
 SEARCH_SIZE = 1000
-REFERENCE_SIZE = 100
+REFERENCE_SIZE = 1000
 
 SEARCH_PPU = 5.0
 REFERENCE_PPU = 50.0
 
-TEMPLATE_SIZE = 10
+TEMPLATE_SIZE = 100
 
 SUPERSAMPLE = 4
 
