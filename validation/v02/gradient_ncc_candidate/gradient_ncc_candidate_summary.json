@@ -1,0 +1,32 @@
+{
+  "step": 31,
+  "name": "Gradient + NCC Candidate Generation Benchmark",
+  "canonical_renderer": "C:\\Users\\HP\\Desktop\\MICRONYX-PS02\\scripts\\canonical_renderer.py",
+  "canonical_observation": true,
+  "target_fingerprint": false,
+  "new_ground_truth": false,
+  "alternate_renderer": false,
+  "manual_generator_selection": false,
+  "candidate_tolerance_px": 5.0,
+  "primary_k": 250,
+  "methods": [
+    "ncc",
+    "gradient_magnitude",
+    "gradient_orientation",
+    "gradient_ncc_hybrid"
+  ],
+  "K_values": [
+    10,
+    25,
+    50,
+    100,
+    250,
+    500
+  ],
+  "scene_count": 60,
+  "scene_types": [
+    "periodic",
+    "quasiperiodic"
+  ],
+  "runtime_seconds": 134.1936650276184
+}

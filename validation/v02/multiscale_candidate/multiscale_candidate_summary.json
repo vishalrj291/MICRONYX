@@ -1,0 +1,31 @@
+{
+  "step": 32,
+  "name": "Multi-Scale Physical-Context Candidate Generation",
+  "canonical_renderer": "C:\\Users\\HP\\Desktop\\MICRONYX-PS02\\scripts\\canonical_renderer.py",
+  "canonical_observation": true,
+  "target_fingerprint": false,
+  "new_ground_truth": false,
+  "alternate_renderer": false,
+  "manual_representation_selection": false,
+  "context_sizes_px": [
+    10,
+    20,
+    40
+  ],
+  "physical_context_units": {
+    "10": 2,
+    "20": 4,
+    "40": 8
+  },
+  "K_values": [
+    10,
+    25,
+    50,
+    100,
+    250,
+    500
+  ],
+  "candidate_tolerance_px": 5.0,
+  "primary_k": 250,
+  "runtime_seconds": 510.7443628311157
+}

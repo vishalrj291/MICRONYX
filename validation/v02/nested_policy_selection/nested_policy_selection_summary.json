@@ -1,0 +1,54 @@
+{
+  "step": 30,
+  "name": "Nested / Grouped Policy Selection Validation",
+  "status": "research_validation",
+  "primary_k": 250,
+  "canonical_step26_eda": true,
+  "canonical_step25_recall": true,
+  "target_fingerprint": false,
+  "new_ground_truth": false,
+  "alternate_renderer": false,
+  "manual_policy_selection": false,
+  "feature_count": 37,
+  "policy_count": 12,
+  "validation": {
+    "method": "grouped leave-one-seed-out",
+    "group_column": "seed",
+    "unique_seeds": 30,
+    "both_scene_types_held_out_together": true,
+    "fresh_models_per_fold": true,
+    "held_out_targets_used_for_selection": false
+  },
+  "global": {
+    "scenes_evaluated": 60,
+    "selection_accuracy_percent": 11.666666666666666,
+    "automated_recall_percent": 78.33333333333333,
+    "oracle_recall_percent": 83.33333333333334,
+    "mean_regret_percentage_points": 5.0
+  },
+  "scene_type": [
+    {
+      "scene_type": "periodic",
+      "scenes": 30,
+      "selection_accuracy_percent": 16.666666666666664,
+      "automated_recall_percent": 100.0,
+      "oracle_recall_percent": 100.0,
+      "mean_regret_percentage_points": 0.0
+    },
+    {
+      "scene_type": "quasiperiodic",
+      "scenes": 30,
+      "selection_accuracy_percent": 6.666666666666667,
+      "automated_recall_percent": 56.666666666666664,
+      "oracle_recall_percent": 66.66666666666666,
+      "mean_regret_percentage_points": 10.0
+    }
+  ],
+  "outputs": {
+    "results": "C:\\Users\\HP\\Desktop\\MICRONYX-PS02\\validation\\v02\\nested_policy_selection\\nested_policy_selection_results.csv",
+    "predictions": "C:\\Users\\HP\\Desktop\\MICRONYX-PS02\\validation\\v02\\nested_policy_selection\\nested_policy_predictions.csv",
+    "scene_summary": "C:\\Users\\HP\\Desktop\\MICRONYX-PS02\\validation\\v02\\nested_policy_selection\\nested_policy_scene_summary.csv",
+    "policy_distribution": "C:\\Users\\HP\\Desktop\\MICRONYX-PS02\\validation\\v02\\nested_policy_selection\\policy_distribution.csv",
+    "prediction_quality": "C:\\Users\\HP\\Desktop\\MICRONYX-PS02\\validation\\v02\\nested_policy_selection\\policy_prediction_quality.csv"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "step": "29C",
+  "models_loaded": 12,
+  "feature_count": 37,
+  "selection_accuracy_percent": 1.6666666666666667,
+  "automated_recall_percent": 51.66666666666667,
+  "oracle_recall_percent": 83.33333333333334,
+  "mean_regret_percentage_points": 31.666666666666664,
+  "policy_distribution": {
+    "edge": 60
+  }
+}

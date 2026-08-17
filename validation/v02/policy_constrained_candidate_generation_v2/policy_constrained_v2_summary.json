@@ -1,0 +1,75 @@
+{
+  "step": 29,
+  "name": "Policy-Constrained Candidate Generation",
+  "canonical_renderer": true,
+  "step26_eda": true,
+  "step28_xgboost_regressors": true,
+  "target_fingerprint": false,
+  "new_ground_truth": false,
+  "manual_policy_selection": false,
+  "policy_execution": true,
+  "policies": [
+    "ncc",
+    "dog",
+    "gradient",
+    "edge",
+    "frequency",
+    "ncc_dog",
+    "dog_gradient",
+    "dog_frequency",
+    "dog_edge",
+    "dog_gradient_frequency",
+    "dog_gradient_edge",
+    "all"
+  ],
+  "policy_distribution": {
+    "edge": 60
+  },
+  "performance": {
+    "periodic": {
+      "10": {
+        "recall_percent": 100.0,
+        "median_error_px": 7.079901129253148
+      },
+      "25": {
+        "recall_percent": 100.0,
+        "median_error_px": 7.079901129253148
+      },
+      "50": {
+        "recall_percent": 100.0,
+        "median_error_px": 7.079901129253148
+      },
+      "100": {
+        "recall_percent": 100.0,
+        "median_error_px": 7.079901129253148
+      },
+      "250": {
+        "recall_percent": 100.0,
+        "median_error_px": 7.079901129253148
+      }
+    },
+    "quasiperiodic": {
+      "10": {
+        "recall_percent": 0.0,
+        "median_error_px": 352.8276696135986
+      },
+      "25": {
+        "recall_percent": 0.0,
+        "median_error_px": 352.8276696135986
+      },
+      "50": {
+        "recall_percent": 0.0,
+        "median_error_px": 352.8276696135986
+      },
+      "100": {
+        "recall_percent": 0.0,
+        "median_error_px": 352.8276696135986
+      },
+      "250": {
+        "recall_percent": 0.0,
+        "median_error_px": 352.8276696135986
+      }
+    }
+  },
+  "runtime_seconds": 89.78434570001264
+}
