@@ -1,0 +1,7 @@
+fastapi==0.139.0
+uvicorn[standard]==0.51.0
+python-multipart==0.0.32
+numpy==2.5.1
+opencv-python-headless==5.0.0.93
+xgboost==3.3.0
+scikit-learn==1.9.0
