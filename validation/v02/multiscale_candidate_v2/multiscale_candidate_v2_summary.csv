@@ -1,0 +1,3 @@
+scene_type,context_physical_units,search_template_px,method,recall_percent
+periodic,2.0,10,fusion,100.0
+quasiperiodic,2.0,10,fusion,0.0

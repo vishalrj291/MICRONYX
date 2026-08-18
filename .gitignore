@@ -48,3 +48,8 @@ validation/**/*.jpeg
 # Keep important model explicitly if desired
 !validation/v02/learned_ranker/xgboost_ranker.json
 !validation/v02/learned_ranker/feature_importance.json
+# Frontend dependencies
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
