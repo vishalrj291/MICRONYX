@@ -7,7 +7,7 @@
  * DO NOT modify the backend API contract.
  */
 
-const BASE_URL = '';  // proxied via vite.config.js
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || '';  // proxied via vite.config.js
 
 /**
  * Check backend + model health.
