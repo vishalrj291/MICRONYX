@@ -1,0 +1,11 @@
+sample_id,pattern_type,pitch,true_x,true_y,difficulty
+validation_0000,periodic,16,85.0,116.0,hard
+validation_0001,aperiodic,12,41.0,73.0,medium
+validation_0002,periodic,8,72.0,180.0,hard
+validation_0003,aperiodic,12,97.0,102.0,medium
+validation_0004,periodic,8,70.0,175.0,hard
+validation_0005,aperiodic,8,82.0,188.0,medium
+validation_0006,periodic,16,189.0,197.0,hard
+validation_0007,aperiodic,16,90.0,90.0,medium
+validation_0008,periodic,12,117.0,200.0,hard
+validation_0009,aperiodic,12,82.0,141.0,medium
