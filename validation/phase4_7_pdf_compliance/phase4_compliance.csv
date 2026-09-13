@@ -1,0 +1,14 @@
+pdf_requirement,implementation,evidence,status
+Local context representation (10x10),multiscale/feature_extractor.py,multiscale/feature_extractor.py:L98-L103,PASS
+Medium context representation (20x20 40x40),multiscale/feature_extractor.py,multiscale/feature_extractor.py:L99-L105,PASS
+Large context representation (80x80),multiscale/feature_extractor.py,multiscale/feature_extractor.py:L101-L106,PASS
+Intensity features,multiscale/feature_extractor.py,multiscale/feature_extractor.py:L109-L112,PASS
+Gradient features,multiscale/feature_extractor.py,multiscale/feature_extractor.py:L115-L131,PASS
+Edge features,multiscale/feature_extractor.py,multiscale/feature_extractor.py:L134-L138,PASS
+Orientation features,multiscale/feature_extractor.py,multiscale/feature_extractor.py:L118-L130,PASS
+Morphology features,multiscale/feature_extractor.py,multiscale/feature_extractor.py:L141-L144,PASS
+Texture features,multiscale/feature_extractor.py,multiscale/feature_extractor.py:L147-L149,PASS
+Frequency / periodicity features,multiscale/feature_extractor.py,multiscale/feature_extractor.py:L152-L162,PASS
+Spatial-context features,multiscale/feature_extractor.py,multiscale/feature_extractor.py:L165-L167,PASS
+Compare V1 vs multi-scale features & run ablations,multiscale/feature_extractor.py,multiscale/feature_ablation.csv,PASS
+Learned embeddings (Optional),N/A,Engineered features baseline ceiling not hit,OPTIONAL-NOT-REQUIRED

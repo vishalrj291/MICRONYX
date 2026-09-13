@@ -1,0 +1,5 @@
+split,obs_count,p6_median_err_px,p7_median_err_px,p6_recall_5px,p7_recall_5px,coverage_5px,improved_count,degraded_count
+train,70,509.57,392.96,0.0000,0.0143,0.0143,46,24
+validation,15,527.73,337.32,0.0000,0.0000,0.0667,10,5
+hard_test,15,469.49,462.91,0.0000,0.0000,0.0000,9,6
+overall,100,509.57,399.61,0.0000,0.0100,0.0200,65,35

@@ -1,0 +1,5 @@
+pdf_requirement,implementation,evidence,status
+Optimize current XGBoost (feature selection hyperparams balance hard-negatives),ranking_v2/ranker.py,ranking_v2/ranker.py:L148-L169,PASS
+Compare pointwise pairwise and listwise ranking approaches,ranking_v2/ranker.py,ranking_v2/ranker.py:L134-L188 comparison.csv,PASS
+Recall@1 5 10 25 50 100 250 evaluation across splits,ranking_v2/ranker.py,comparison.csv ranking_v2/report.md,PASS
+Evaluate learned matching/ranking architecture (Optional),N/A,XGBoost Listwise/Pairwise rankers sufficient,OPTIONAL-NOT-REQUIRED

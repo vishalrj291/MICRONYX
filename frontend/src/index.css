@@ -1,0 +1,676 @@
+@import "tailwindcss";
+
+/* ============================================================
+   MICRONYX PS02 — Industrial Dark Theme
+   ============================================================ */
+
+:root {
+  /* Backgrounds */
+  --bg-void:      #0a0b0d;
+  --bg-base:      #0e1014;
+  --bg-panel:     #121519;
+  --bg-surface:   #161b21;
+  --bg-elevated:  #1c2229;
+  --bg-hover:     #1f2730;
+
+  /* Borders */
+  --border-dim:   #1e2530;
+  --border-mid:   #2a3441;
+  --border-bright:#364455;
+
+  /* Text */
+  --text-primary: #d4dbe6;
+  --text-secondary:#8a9bb0;
+  --text-dim:     #4d5f72;
+  --text-muted:   #2e3d4e;
+
+  /* Accent — amber/gold technical */
+  --accent:       #e8a838;
+  --accent-dim:   #b07c1e;
+  --accent-glow:  rgba(232, 168, 56, 0.12);
+  --accent-bright:#f0bc5a;
+
+  /* Status */
+  --status-ok:    #2ecc71;
+  --status-warn:  #e8a838;
+  --status-error: #e74c3c;
+  --status-idle:  #4d5f72;
+
+  /* Cyan for coordinates/measurements */
+  --cyan:         #4fc3d8;
+  --cyan-dim:     #2a8a9d;
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 12px;
+  background-color: var(--bg-void);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Monospace for technical values */
+.mono {
+  font-family: 'JetBrains Mono', 'Consolas', monospace;
+  letter-spacing: 0.02em;
+}
+
+/* ============================================================
+   SCROLLBARS
+   ============================================================ */
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track { background: var(--bg-panel); }
+::-webkit-scrollbar-thumb {
+  background: var(--border-mid);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--border-bright); }
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+
+.app-shell {
+  display: grid;
+  grid-template-rows: 42px 1fr 200px 160px;
+  grid-template-columns: 240px 1fr 220px;
+  height: 100vh;
+  background: var(--bg-void);
+}
+
+.header-bar {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.left-panel {
+  grid-column: 1;
+  grid-row: 2 / 4;
+  border-right: 1px solid var(--border-dim);
+  overflow-y: auto;
+}
+
+.center-top {
+  grid-column: 2;
+  grid-row: 2;
+  overflow: hidden;
+}
+
+.right-panel {
+  grid-column: 3;
+  grid-row: 2 / 4;
+  border-left: 1px solid var(--border-dim);
+  overflow-y: auto;
+}
+
+.center-bottom {
+  grid-column: 2;
+  grid-row: 3;
+  border-top: 1px solid var(--border-dim);
+  overflow: hidden;
+}
+
+.candidate-row-full {
+  grid-column: 1 / -1;
+  grid-row: 4;
+  border-top: 1px solid var(--border-dim);
+  overflow: hidden;
+}
+
+/* ============================================================
+   PANEL CHROME
+   ============================================================ */
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: var(--bg-panel);
+  border-bottom: 1px solid var(--border-dim);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  user-select: none;
+}
+
+.panel-section {
+  padding: 10px;
+  border-bottom: 1px solid var(--border-dim);
+}
+
+.panel-section:last-child {
+  border-bottom: none;
+}
+
+.section-label {
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+}
+
+/* ============================================================
+   DATA ROWS
+   ============================================================ */
+
+.data-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 3px 0;
+}
+
+.data-label {
+  font-size: 10px;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.data-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--text-primary);
+  text-align: right;
+}
+
+.data-value.accent {
+  color: var(--accent);
+}
+
+.data-value.cyan {
+  color: var(--cyan);
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid var(--border-mid);
+  border-radius: 2px;
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  white-space: nowrap;
+}
+
+.btn:hover:not(:disabled) {
+  border-color: var(--border-bright);
+  color: var(--text-primary);
+  background: var(--bg-hover);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  border-color: var(--accent-dim);
+  background: rgba(232, 168, 56, 0.08);
+  color: var(--accent);
+}
+
+.btn-primary:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: rgba(232, 168, 56, 0.14);
+  color: var(--accent-bright);
+}
+
+.btn-primary.running {
+  border-color: var(--accent-dim);
+  color: var(--accent-dim);
+  animation: pulse-border 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-border {
+  0%, 100% { border-color: var(--accent-dim); }
+  50% { border-color: var(--accent); }
+}
+
+.btn-ghost {
+  border-color: transparent;
+  background: transparent;
+}
+
+.btn-ghost:hover:not(:disabled) {
+  border-color: var(--border-dim);
+  background: var(--bg-surface);
+}
+
+/* ============================================================
+   STATUS INDICATORS
+   ============================================================ */
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.status-dot.ok    { background: var(--status-ok); box-shadow: 0 0 6px rgba(46,204,113,0.4); }
+.status-dot.warn  { background: var(--status-warn); }
+.status-dot.error { background: var(--status-error); }
+.status-dot.idle  { background: var(--status-idle); }
+
+.status-dot.ok.pulse {
+  animation: dot-pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes dot-pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 4px rgba(46,204,113,0.4); }
+  50%       { opacity: 0.6; box-shadow: 0 0 10px rgba(46,204,113,0.6); }
+}
+
+/* ============================================================
+   FILE UPLOAD
+   ============================================================ */
+
+.upload-zone {
+  border: 1px dashed var(--border-mid);
+  border-radius: 2px;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  overflow: hidden;
+}
+
+.upload-zone:hover {
+  border-color: var(--border-bright);
+  background: var(--bg-hover);
+}
+
+.upload-zone.loaded {
+  border-color: var(--accent-dim);
+  border-style: solid;
+}
+
+.upload-filename {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9.5px;
+  color: var(--text-secondary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+
+/* ============================================================
+   CANDIDATE TABLE
+   ============================================================ */
+
+.candidate-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+}
+
+.candidate-table thead th {
+  padding: 4px 8px;
+  text-align: left;
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  background: var(--bg-panel);
+  border-bottom: 1px solid var(--border-dim);
+  white-space: nowrap;
+}
+
+.candidate-table tbody tr {
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.candidate-table tbody tr:hover {
+  background: var(--bg-hover);
+}
+
+.candidate-table tbody tr.selected {
+  background: rgba(232, 168, 56, 0.07);
+}
+
+.candidate-table tbody tr.selected td:first-child {
+  border-left: 2px solid var(--accent);
+}
+
+.candidate-table tbody td {
+  padding: 4px 8px;
+  border-bottom: 1px solid var(--border-dim);
+  border-left: 2px solid transparent;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.candidate-table tbody tr.selected td {
+  color: var(--text-primary);
+}
+
+.candidate-table .rank-cell {
+  color: var(--text-dim);
+  font-size: 10px;
+  width: 28px;
+}
+
+.candidate-table .prob-bar {
+  width: 60px;
+  height: 3px;
+  background: var(--bg-elevated);
+  border-radius: 1px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.candidate-table .prob-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 1px;
+  transition: width 0.3s ease;
+}
+
+/* ============================================================
+   PIPELINE
+   ============================================================ */
+
+.pipeline-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.pipeline-node {
+  font-size: 8.5px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-mid);
+  border-radius: 1px;
+  padding: 4px 8px;
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.pipeline-node.active {
+  border-color: var(--accent-dim);
+  color: var(--accent);
+}
+
+.pipeline-connector {
+  width: 1px;
+  height: 10px;
+  background: var(--border-mid);
+}
+
+/* ============================================================
+   LOCALIZATION RESULT
+   ============================================================ */
+
+.result-coord-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 8px 10px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-mid);
+  border-radius: 2px;
+}
+
+.result-coord-axis {
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.result-coord-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--cyan);
+  line-height: 1.1;
+}
+
+.result-coord-unit {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  color: var(--text-dim);
+}
+
+.confidence-bar-track {
+  width: 100%;
+  height: 3px;
+  background: var(--bg-elevated);
+  border-radius: 1px;
+  overflow: hidden;
+  margin-top: 3px;
+}
+
+.confidence-bar-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 1px;
+  transition: width 0.5s ease;
+}
+
+/* ============================================================
+   DETECTION STATUS BADGE
+   ============================================================ */
+
+.detection-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 3px 7px;
+  border-radius: 1px;
+}
+
+.detection-badge.detected {
+  background: rgba(46,204,113,0.08);
+  border: 1px solid rgba(46,204,113,0.25);
+  color: var(--status-ok);
+}
+
+.detection-badge.waiting {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-dim);
+  color: var(--text-dim);
+}
+
+.detection-badge.running {
+  background: rgba(232,168,56,0.08);
+  border: 1px solid rgba(232,168,56,0.25);
+  color: var(--accent);
+}
+
+.detection-badge.error {
+  background: rgba(231,76,60,0.08);
+  border: 1px solid rgba(231,76,60,0.25);
+  color: var(--status-error);
+}
+
+/* ============================================================
+   CANVAS CONTAINER
+   ============================================================ */
+
+.inspection-canvas-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-void);
+  overflow: hidden;
+  cursor: crosshair;
+}
+
+.inspection-canvas-container canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* ============================================================
+   EMPTY STATE
+   ============================================================ */
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 100%;
+  color: var(--text-dim);
+}
+
+.empty-state-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.empty-state-sub {
+  font-size: 9px;
+  color: var(--text-muted);
+}
+
+/* ============================================================
+   HEADER BADGES
+   ============================================================ */
+
+.header-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  padding: 2px 6px;
+  border: 1px solid var(--border-dim);
+  border-radius: 1px;
+}
+
+.header-badge.ok {
+  border-color: rgba(46,204,113,0.2);
+  color: rgba(46,204,113,0.7);
+}
+
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+
+.fade-in {
+  animation: fade-in 0.25s ease forwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(2px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.spin {
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ============================================================
+   MISC UTILITIES
+   ============================================================ */
+
+.text-xs  { font-size: 9px; }
+.text-sm  { font-size: 10px; }
+.text-base { font-size: 11px; }
+.text-lg  { font-size: 13px; }
+.text-xl  { font-size: 16px; }
+
+.divider {
+  height: 1px;
+  background: var(--border-dim);
+  margin: 6px 0;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip-content {
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-mid);
+  color: var(--text-secondary);
+  font-size: 9px;
+  padding: 3px 6px;
+  border-radius: 2px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  z-index: 100;
+}
+
+.tooltip:hover .tooltip-content {
+  opacity: 1;
+}

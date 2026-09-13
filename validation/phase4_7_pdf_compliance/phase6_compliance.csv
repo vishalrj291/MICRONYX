@@ -1,0 +1,9 @@
+pdf_requirement,implementation,evidence,status
+Gradient similarity,geometry/verifier.py,geometry/verifier.py:L58-L61,PASS
+Orientation similarity,geometry/verifier.py,geometry/verifier.py:L63-L67,PASS
+Edge-layout similarity,geometry/verifier.py,geometry/verifier.py:L70-L73,PASS
+Spatial-arrangement similarity,geometry/verifier.py,geometry/verifier.py:L76-L78,PASS
+Multi-scale context similarity,geometry/verifier.py,geometry/verifier.py:L50-L55,PASS
+Combine ML score and structural score & rerank candidates,geometry/verifier.py,geometry/verifier.py:L148 scores.csv,PASS
+Report False Positives (FP Count FP Rate Recall@5/10/25 True Cand Rank),geometry/verifier.py,geometry/report.md,PASS
+Robust correspondence / transformation methods (Optional),N/A,Candidate recall is primary bottleneck,OPTIONAL-NOT-REQUIRED

@@ -1,0 +1,72 @@
+{
+  "step": "32A",
+  "canonical_renderer": true,
+  "search_shape": [
+    1000,
+    1000
+  ],
+  "reference_shape": [
+    1000,
+    1000
+  ],
+  "search_pixels_per_unit": 5.0,
+  "reference_pixels_per_unit": 50.0,
+  "sampling_ratio": 10.0,
+  "context_physical_units": [
+    2.0,
+    4.0,
+    8.0
+  ],
+  "reference_context_sizes_px": [
+    100,
+    200,
+    400
+  ],
+  "search_equivalent_template_sizes_px": [
+    10,
+    20,
+    40
+  ],
+  "downsample_factor": 10,
+  "downsampling_method": "deterministic_non_overlapping_block_mean",
+  "arbitrary_interpolation": false,
+  "template_resizing": false,
+  "target_fingerprint": false,
+  "new_ground_truth": false,
+  "alternate_renderer": false,
+  "methods": [
+    "ncc",
+    "gradient",
+    "fusion"
+  ],
+  "K_values": [
+    10,
+    25,
+    50,
+    100,
+    250,
+    500
+  ],
+  "primary_K": 250,
+  "candidate_tolerance_px": 5.0,
+  "scene_count": 60,
+  "top_raw_candidates": 20000,
+  "nms_distance_px": 2.0,
+  "best_strategies": [
+    {
+      "scene_type": "periodic",
+      "context_physical_units": 2.0,
+      "search_template_px": 10,
+      "method": "fusion",
+      "recall_percent": 100.0
+    },
+    {
+      "scene_type": "quasiperiodic",
+      "context_physical_units": 2.0,
+      "search_template_px": 10,
+      "method": "fusion",
+      "recall_percent": 0.0
+    }
+  ],
+  "runtime_seconds": 117.27475159999449
+}

@@ -1,0 +1,9 @@
+split,model_version,median_error_px,mean_error_px,p95_error_px,max_error_px,recall_at_5px
+train,baseline_xgboost,392.96,396.15,670.37,755.53,0.0143
+train,hard_negative_xgboost,391.02,389.52,695.03,823.31,0.0143
+validation,baseline_xgboost,337.32,371.28,713.07,821.79,0.0000
+validation,hard_negative_xgboost,311.74,310.23,557.05,666.47,0.0000
+hard_test,baseline_xgboost,462.91,486.57,705.25,740.74,0.0000
+hard_test,hard_negative_xgboost,389.50,379.62,683.73,749.54,0.0000
+overall,baseline_xgboost,399.61,405.98,690.88,821.79,0.0100
+overall,hard_negative_xgboost,372.00,376.14,685.62,823.31,0.0100

@@ -1,0 +1,154 @@
+{
+  "alpha_ml_weight": 0.7,
+  "ml_only_metrics": {
+    "train": {
+      "count": 70,
+      "fp_count": 69,
+      "fp_rate": 0.9857142857142858,
+      "median_error_px": 392.9619025668936,
+      "mean_error_px": 396.1488966492356,
+      "p95_error_px": 670.37142383871,
+      "recall_at_5px": 0.014285714285714285,
+      "recall_at_10px": 0.014285714285714285,
+      "recall_at_25px": 0.014285714285714285,
+      "avg_true_candidate_rank": 1.0
+    },
+    "validation": {
+      "count": 15,
+      "fp_count": 15,
+      "fp_rate": 1.0,
+      "median_error_px": 337.322545940825,
+      "mean_error_px": 371.2849006559684,
+      "p95_error_px": 713.0689007846412,
+      "recall_at_5px": 0.0,
+      "recall_at_10px": 0.0,
+      "recall_at_25px": 0.0,
+      "avg_true_candidate_rank": 93.0
+    },
+    "hard_test": {
+      "count": 15,
+      "fp_count": 15,
+      "fp_rate": 1.0,
+      "median_error_px": 462.91089855392255,
+      "mean_error_px": 486.5667367624757,
+      "p95_error_px": 705.2506064963192,
+      "recall_at_5px": 0.0,
+      "recall_at_10px": 0.0,
+      "recall_at_25px": 0.0,
+      "avg_true_candidate_rank": -1.0
+    },
+    "overall": {
+      "count": 100,
+      "fp_count": 99,
+      "fp_rate": 0.99,
+      "median_error_px": 399.60587674786075,
+      "mean_error_px": 405.9819732672316,
+      "p95_error_px": 690.8781629051146,
+      "recall_at_5px": 0.01,
+      "recall_at_10px": 0.01,
+      "recall_at_25px": 0.01,
+      "avg_true_candidate_rank": 47.0
+    }
+  },
+  "structural_only_metrics": {
+    "train": {
+      "count": 70,
+      "fp_count": 70,
+      "fp_rate": 1.0,
+      "median_error_px": 271.8423563079794,
+      "mean_error_px": 292.3601074703746,
+      "p95_error_px": 530.0985482362943,
+      "recall_at_5px": 0.0,
+      "recall_at_10px": 0.0,
+      "recall_at_25px": 0.0,
+      "avg_true_candidate_rank": 103.0
+    },
+    "validation": {
+      "count": 15,
+      "fp_count": 15,
+      "fp_rate": 1.0,
+      "median_error_px": 364.84311696947225,
+      "mean_error_px": 369.83311270501054,
+      "p95_error_px": 762.9562144135085,
+      "recall_at_5px": 0.0,
+      "recall_at_10px": 0.0,
+      "recall_at_25px": 0.0,
+      "avg_true_candidate_rank": 212.0
+    },
+    "hard_test": {
+      "count": 15,
+      "fp_count": 15,
+      "fp_rate": 1.0,
+      "median_error_px": 398.6056948915808,
+      "mean_error_px": 352.0660312237067,
+      "p95_error_px": 562.9117023964588,
+      "recall_at_5px": 0.0,
+      "recall_at_10px": 0.0,
+      "recall_at_25px": 0.0,
+      "avg_true_candidate_rank": -1.0
+    },
+    "overall": {
+      "count": 100,
+      "fp_count": 100,
+      "fp_rate": 1.0,
+      "median_error_px": 293.31482383538525,
+      "mean_error_px": 312.9369468185698,
+      "p95_error_px": 634.7045314126086,
+      "recall_at_5px": 0.0,
+      "recall_at_10px": 0.0,
+      "recall_at_25px": 0.0,
+      "avg_true_candidate_rank": 157.5
+    }
+  },
+  "combined_metrics": {
+    "train": {
+      "count": 70,
+      "fp_count": 69,
+      "fp_rate": 0.9857142857142858,
+      "median_error_px": 276.6803723166822,
+      "mean_error_px": 295.2817866474922,
+      "p95_error_px": 538.9849408062439,
+      "recall_at_5px": 0.014285714285714285,
+      "recall_at_10px": 0.014285714285714285,
+      "recall_at_25px": 0.014285714285714285,
+      "avg_true_candidate_rank": 1.0
+    },
+    "validation": {
+      "count": 15,
+      "fp_count": 15,
+      "fp_rate": 1.0,
+      "median_error_px": 364.84311696947225,
+      "mean_error_px": 379.5705865843061,
+      "p95_error_px": 762.9562144135085,
+      "recall_at_5px": 0.0,
+      "recall_at_10px": 0.0,
+      "recall_at_25px": 0.0,
+      "avg_true_candidate_rank": 212.0
+    },
+    "hard_test": {
+      "count": 15,
+      "fp_count": 15,
+      "fp_rate": 1.0,
+      "median_error_px": 398.6056948915808,
+      "mean_error_px": 352.0660312237067,
+      "p95_error_px": 562.9117023964588,
+      "recall_at_5px": 0.0,
+      "recall_at_10px": 0.0,
+      "recall_at_25px": 0.0,
+      "avg_true_candidate_rank": -1.0
+    },
+    "overall": {
+      "count": 100,
+      "fp_count": 99,
+      "fp_rate": 0.99,
+      "median_error_px": 305.9430039644901,
+      "mean_error_px": 316.4427433244465,
+      "p95_error_px": 642.2906652422332,
+      "recall_at_5px": 0.01,
+      "recall_at_10px": 0.01,
+      "recall_at_25px": 0.01,
+      "avg_true_candidate_rank": 106.5
+    }
+  },
+  "decision": "KEEP"
+}

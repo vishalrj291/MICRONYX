@@ -1,0 +1,27 @@
+{
+  "periodic": {
+    "scenes": 30,
+    "mean_contrast": 0.25844082779235383,
+    "mean_gradient": 1.0807955265045166,
+    "mean_edge_density": 0.242006,
+    "mean_spectral_entropy": 0.14493934932269065,
+    "mean_periodicity": 0.9949965370429624,
+    "mean_high_frequency_ratio": 0.9819121527543178,
+    "structure_classes": {
+      "strongly_periodic": 30
+    }
+  },
+  "quasiperiodic": {
+    "scenes": 30,
+    "mean_contrast": 0.23163127127641917,
+    "mean_gradient": 0.9499698440233867,
+    "mean_edge_density": 0.3180506666666666,
+    "mean_spectral_entropy": 0.7744943285812241,
+    "mean_periodicity": 0.6920089289963691,
+    "mean_high_frequency_ratio": 0.9322153040104185,
+    "structure_classes": {
+      "strongly_periodic": 19,
+      "structured": 11
+    }
+  }
+}

@@ -1,0 +1,6 @@
+pdf_requirement,implementation,evidence,status
+Inspect response surface around winning candidate,refinement/refine.py,refinement/refine.py:L64-L96,PASS
+Implement peak refinement (Quadratic / Gaussian fitting),refinement/refine.py,refinement/refine.py:L26-L61,PASS
+Compare integer-pixel error vs refined error,refinement/refine.py,refinement/refine.py:L148-L188 comparison.csv,PASS
+Report metrics (Median Mean P95 Max Recall@1/5/10px px and pct improvement),refinement/refine.py,refinement/report.md,PASS
+Non-leakage and Bounds validation,refinement/refine.py,refinement/refine.py:L116-L125,PASS

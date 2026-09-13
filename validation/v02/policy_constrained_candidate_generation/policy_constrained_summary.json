@@ -1,0 +1,59 @@
+{
+  "step": 29,
+  "description": "Policy-constrained candidate generation",
+  "canonical_renderer": true,
+  "target_fingerprint_injected": false,
+  "new_ground_truth_generated": false,
+  "manual_generator_selection": false,
+  "automated_policy": true,
+  "policy_distribution": {
+    "dog": 60
+  },
+  "performance": {
+    "periodic": {
+      "10": {
+        "recall_percent": 100.0,
+        "median_error_px": 7.079901129253148
+      },
+      "25": {
+        "recall_percent": 100.0,
+        "median_error_px": 7.079901129253148
+      },
+      "50": {
+        "recall_percent": 100.0,
+        "median_error_px": 7.079901129253148
+      },
+      "100": {
+        "recall_percent": 100.0,
+        "median_error_px": 7.079901129253148
+      },
+      "250": {
+        "recall_percent": 100.0,
+        "median_error_px": 7.079901129253148
+      }
+    },
+    "quasiperiodic": {
+      "10": {
+        "recall_percent": 0.0,
+        "median_error_px": 28.15003487980112
+      },
+      "25": {
+        "recall_percent": 0.0,
+        "median_error_px": 28.15003487980112
+      },
+      "50": {
+        "recall_percent": 0.0,
+        "median_error_px": 28.15003487980112
+      },
+      "100": {
+        "recall_percent": 0.0,
+        "median_error_px": 28.15003487980112
+      },
+      "250": {
+        "recall_percent": 3.3333333333333335,
+        "median_error_px": 28.15003487980112
+      }
+    }
+  },
+  "runtime_seconds": 94.22290789999533
+}

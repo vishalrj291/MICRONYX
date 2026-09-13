@@ -1,0 +1,127 @@
+{
+  "feature_count": 33,
+  "ablation_results": [
+    {
+      "feature_set": "V1 baseline",
+      "feature_count": 17,
+      "train_median": 509.57342256683114,
+      "train_recall": 0.0,
+      "val_median": 527.7276759844987,
+      "val_recall": 0.0,
+      "test_median": 469.4938764243896,
+      "test_recall": 0.0,
+      "overall_median": 509.57342256683114,
+      "overall_recall": 0.0
+    },
+    {
+      "feature_set": "+ intensity",
+      "feature_count": 21,
+      "train_median": 509.57342256683114,
+      "train_recall": 0.0,
+      "val_median": 527.7276759844987,
+      "val_recall": 0.0,
+      "test_median": 469.4938764243896,
+      "test_recall": 0.0,
+      "overall_median": 509.57342256683114,
+      "overall_recall": 0.0
+    },
+    {
+      "feature_set": "+ gradient",
+      "feature_count": 22,
+      "train_median": 509.57342256683114,
+      "train_recall": 0.0,
+      "val_median": 527.7276759844987,
+      "val_recall": 0.0,
+      "test_median": 469.4938764243896,
+      "test_recall": 0.0,
+      "overall_median": 509.57342256683114,
+      "overall_recall": 0.0
+    },
+    {
+      "feature_set": "+ edge",
+      "feature_count": 25,
+      "train_median": 509.57342256683114,
+      "train_recall": 0.0,
+      "val_median": 527.7276759844987,
+      "val_recall": 0.0,
+      "test_median": 469.4938764243896,
+      "test_recall": 0.0,
+      "overall_median": 509.57342256683114,
+      "overall_recall": 0.0
+    },
+    {
+      "feature_set": "+ orientation",
+      "feature_count": 25,
+      "train_median": 509.57342256683114,
+      "train_recall": 0.0,
+      "val_median": 527.7276759844987,
+      "val_recall": 0.0,
+      "test_median": 469.4938764243896,
+      "test_recall": 0.0,
+      "overall_median": 509.57342256683114,
+      "overall_recall": 0.0
+    },
+    {
+      "feature_set": "+ morphology",
+      "feature_count": 27,
+      "train_median": 509.57342256683114,
+      "train_recall": 0.0,
+      "val_median": 527.7276759844987,
+      "val_recall": 0.0,
+      "test_median": 469.4938764243896,
+      "test_recall": 0.0,
+      "overall_median": 509.57342256683114,
+      "overall_recall": 0.0
+    },
+    {
+      "feature_set": "+ texture",
+      "feature_count": 28,
+      "train_median": 509.57342256683114,
+      "train_recall": 0.0,
+      "val_median": 527.7276759844987,
+      "val_recall": 0.0,
+      "test_median": 469.4938764243896,
+      "test_recall": 0.0,
+      "overall_median": 509.57342256683114,
+      "overall_recall": 0.0
+    },
+    {
+      "feature_set": "+ frequency/periodicity",
+      "feature_count": 30,
+      "train_median": 509.57342256683114,
+      "train_recall": 0.0,
+      "val_median": 527.7276759844987,
+      "val_recall": 0.0,
+      "test_median": 469.4938764243896,
+      "test_recall": 0.0,
+      "overall_median": 509.57342256683114,
+      "overall_recall": 0.0
+    },
+    {
+      "feature_set": "+ spatial context",
+      "feature_count": 33,
+      "train_median": 509.57342256683114,
+      "train_recall": 0.0,
+      "val_median": 527.7276759844987,
+      "val_recall": 0.0,
+      "test_median": 469.4938764243896,
+      "test_recall": 0.0,
+      "overall_median": 509.57342256683114,
+      "overall_recall": 0.0
+    },
+    {
+      "feature_set": "combined multi-scale representation",
+      "feature_count": 33,
+      "train_median": 509.57342256683114,
+      "train_recall": 0.0,
+      "val_median": 527.7276759844987,
+      "val_recall": 0.0,
+      "test_median": 469.4938764243896,
+      "test_recall": 0.0,
+      "overall_median": 509.57342256683114,
+      "overall_recall": 0.0
+    }
+  ],
+  "validation_best_feature_set": "V1 baseline",
+  "decision": "REJECT"
+}

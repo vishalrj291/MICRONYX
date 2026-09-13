@@ -1,0 +1,2083 @@
+{
+  "dataset_root": "dataset_v0.1",
+  "target_tolerance_px": 5.0,
+  "splits": {
+    "train": {
+      "candidate_count": 16577,
+      "positive_count": 1,
+      "raw_model_score": {
+        "brier_score": 4.167109815914717e-06,
+        "ece": 0.00014434071711444564,
+        "mce": 0.24011866748332977,
+        "bins": [
+          {
+            "bin": 1,
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "sample_count": 16575,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.0001298587537538924,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0001298587537538924
+          },
+          {
+            "bin": 2,
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.15000000000000002,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 3,
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "sample_count": 1,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.24011866748332977,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.24011866748332977
+          },
+          {
+            "bin": 4,
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.35000000000000003,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 5,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.45,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 6,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.55,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 7,
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.6500000000000001,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 8,
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.75,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 9,
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.8500000000000001,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 10,
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "sample_count": 1,
+            "positive_count": 1,
+            "mean_predicted_probability": 0.9997914433479309,
+            "observed_positive_rate": 1.0,
+            "absolute_calibration_error": 0.0002085566520690918
+          }
+        ]
+      },
+      "platt_scaling": {
+        "brier_score": 1.7582035374040468e-06,
+        "ece": 2.9614552590364713e-05,
+        "mce": 0.16625158199220877,
+        "bins": [
+          {
+            "bin": 1,
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "sample_count": 16575,
+            "positive_count": 0,
+            "mean_predicted_probability": 1.9586078232915993e-05,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 1.9586078232915993e-05
+          },
+          {
+            "bin": 2,
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "sample_count": 1,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.16625158199220877,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.16625158199220877
+          },
+          {
+            "bin": 3,
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.25,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 4,
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.35000000000000003,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 5,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.45,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 6,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.55,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 7,
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.6500000000000001,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 8,
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.75,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 9,
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.8500000000000001,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 10,
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "sample_count": 1,
+            "positive_count": 1,
+            "mean_predicted_probability": 0.9999703904123155,
+            "observed_positive_rate": 1.0,
+            "absolute_calibration_error": 2.9609587684498173e-05
+          }
+        ]
+      },
+      "isotonic_regression": {
+        "brier_score": 0.0,
+        "ece": 0.0,
+        "mce": 0.0,
+        "bins": [
+          {
+            "bin": 1,
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "sample_count": 16576,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.0,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 2,
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.15000000000000002,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 3,
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.25,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 4,
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.35000000000000003,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 5,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.45,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 6,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.55,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 7,
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.6500000000000001,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 8,
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.75,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 9,
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.8500000000000001,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 10,
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "sample_count": 1,
+            "positive_count": 1,
+            "mean_predicted_probability": 1.0,
+            "observed_positive_rate": 1.0,
+            "absolute_calibration_error": 0.0
+          }
+        ]
+      }
+    },
+    "validation": {
+      "candidate_count": 3523,
+      "positive_count": 1,
+      "raw_model_score": {
+        "brier_score": 0.0003864537991022947,
+        "ece": 0.00031978812702642605,
+        "mce": 0.5989389419555664,
+        "bins": [
+          {
+            "bin": 1,
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "sample_count": 3522,
+            "positive_count": 1,
+            "mean_predicted_probability": 0.00013410714663301176,
+            "observed_positive_rate": 0.00028392958546280523,
+            "absolute_calibration_error": 0.00014982243882979347
+          },
+          {
+            "bin": 2,
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.15000000000000002,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 3,
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.25,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 4,
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.35000000000000003,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 5,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.45,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 6,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "sample_count": 1,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.5989389419555664,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.5989389419555664
+          },
+          {
+            "bin": 7,
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.6500000000000001,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 8,
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.75,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 9,
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.8500000000000001,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 10,
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.95,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          }
+        ]
+      },
+      "platt_scaling": {
+        "brier_score": 0.0003800307183652206,
+        "ece": 0.00042905874424523083,
+        "mce": 0.5817272534938531,
+        "bins": [
+          {
+            "bin": 1,
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "sample_count": 3522,
+            "positive_count": 1,
+            "mean_predicted_probability": 1.9918596683107632e-05,
+            "observed_positive_rate": 0.00028392958546280523,
+            "absolute_calibration_error": 0.0002640109887796976
+          },
+          {
+            "bin": 2,
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.15000000000000002,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 3,
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.25,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 4,
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.35000000000000003,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 5,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.45,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 6,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "sample_count": 1,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.5817272534938531,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.5817272534938531
+          },
+          {
+            "bin": 7,
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.6500000000000001,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 8,
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.75,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 9,
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.8500000000000001,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 10,
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.95,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          }
+        ]
+      },
+      "isotonic_regression": {
+        "brier_score": 0.0003471758850597046,
+        "ece": 0.0004179208935211372,
+        "mce": 0.4723353078749663,
+        "bins": [
+          {
+            "bin": 1,
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "sample_count": 3522,
+            "positive_count": 1,
+            "mean_predicted_probability": 0.0,
+            "observed_positive_rate": 0.00028392958546280523,
+            "absolute_calibration_error": 0.00028392958546280523
+          },
+          {
+            "bin": 2,
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.15000000000000002,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 3,
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.25,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 4,
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.35000000000000003,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 5,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "sample_count": 1,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.4723353078749663,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.4723353078749663
+          },
+          {
+            "bin": 6,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.55,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 7,
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.6500000000000001,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 8,
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.75,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 9,
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.8500000000000001,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 10,
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.95,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          }
+        ]
+      }
+    },
+    "hard_test": {
+      "candidate_count": 3532,
+      "positive_count": 0,
+      "raw_model_score": {
+        "brier_score": 7.322742587387393e-07,
+        "ece": 0.00014435527852438388,
+        "mce": 0.00014435527852438388,
+        "bins": [
+          {
+            "bin": 1,
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "sample_count": 3532,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.00014435527852438388,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.00014435527852438388
+          },
+          {
+            "bin": 2,
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.15000000000000002,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 3,
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.25,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 4,
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.35000000000000003,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 5,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.45,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 6,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.55,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 7,
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.6500000000000001,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 8,
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.75,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 9,
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.8500000000000001,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 10,
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.95,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          }
+        ]
+      },
+      "platt_scaling": {
+        "brier_score": 9.079683916658768e-08,
+        "ece": 2.200005882051551e-05,
+        "mce": 2.200005882051551e-05,
+        "bins": [
+          {
+            "bin": 1,
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "sample_count": 3532,
+            "positive_count": 0,
+            "mean_predicted_probability": 2.200005882051551e-05,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 2.200005882051551e-05
+          },
+          {
+            "bin": 2,
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.15000000000000002,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 3,
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.25,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 4,
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.35000000000000003,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 5,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.45,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 6,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.55,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 7,
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.6500000000000001,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 8,
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.75,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 9,
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.8500000000000001,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 10,
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.95,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          }
+        ]
+      },
+      "isotonic_regression": {
+        "brier_score": 0.0,
+        "ece": 0.0,
+        "mce": 0.0,
+        "bins": [
+          {
+            "bin": 1,
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "sample_count": 3532,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.0,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 2,
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.15000000000000002,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 3,
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.25,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 4,
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.35000000000000003,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 5,
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.45,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 6,
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.55,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 7,
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.6500000000000001,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 8,
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.75,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 9,
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.8500000000000001,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          },
+          {
+            "bin": 10,
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "sample_count": 0,
+            "positive_count": 0,
+            "mean_predicted_probability": 0.95,
+            "observed_positive_rate": 0.0,
+            "absolute_calibration_error": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "observation_spatial_uncertainty": [
+    {
+      "pair_id": "DRAM_00001",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 230,
+      "top1_raw_score": 0.0014966055750846863,
+      "top1_distance_px": 435.45895328951497,
+      "spatial_mean_x": 453.14932026046836,
+      "spatial_mean_y": 526.1425055031639,
+      "spatial_std_px": 364.4635957900964
+    },
+    {
+      "pair_id": "DRAM_00002",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 239,
+      "top1_raw_score": 0.002275196136906743,
+      "top1_distance_px": 671.7592574724966,
+      "spatial_mean_x": 579.6796484288734,
+      "spatial_mean_y": 484.6806287893228,
+      "spatial_std_px": 335.93985805056207
+    },
+    {
+      "pair_id": "DRAM_00003",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 214,
+      "top1_raw_score": 0.0042654769495129585,
+      "top1_distance_px": 491.5572194566976,
+      "spatial_mean_x": 456.2711939397384,
+      "spatial_mean_y": 517.9179954090341,
+      "spatial_std_px": 391.4091493047336
+    },
+    {
+      "pair_id": "DRAM_00004",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 240,
+      "top1_raw_score": 0.00047096089110709727,
+      "top1_distance_px": 496.6009464348613,
+      "spatial_mean_x": 469.828479340248,
+      "spatial_mean_y": 490.833411257576,
+      "spatial_std_px": 358.42103712715425
+    },
+    {
+      "pair_id": "DRAM_00005",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 238,
+      "top1_raw_score": 0.0014966055750846863,
+      "top1_distance_px": 534.7041237918406,
+      "spatial_mean_x": 599.4293389283471,
+      "spatial_mean_y": 434.83834487282115,
+      "spatial_std_px": 381.65941934912627
+    },
+    {
+      "pair_id": "DRAM_00006",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 244,
+      "top1_raw_score": 0.043389443308115005,
+      "top1_distance_px": 493.115098126188,
+      "spatial_mean_x": 447.0992612183096,
+      "spatial_mean_y": 300.39085180675147,
+      "spatial_std_px": 280.76948539777123
+    },
+    {
+      "pair_id": "DRAM_00007",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 221,
+      "top1_raw_score": 0.0007972517632879317,
+      "top1_distance_px": 668.5989081654262,
+      "spatial_mean_x": 430.0535977550125,
+      "spatial_mean_y": 502.18943522422705,
+      "spatial_std_px": 378.9240158262007
+    },
+    {
+      "pair_id": "DRAM_00008",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 237,
+      "top1_raw_score": 0.0042654769495129585,
+      "top1_distance_px": 46.63153439465616,
+      "spatial_mean_x": 496.9309661234016,
+      "spatial_mean_y": 562.074211525791,
+      "spatial_std_px": 343.4093532913006
+    },
+    {
+      "pair_id": "DRAM_00009",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 225,
+      "top1_raw_score": 0.005546268075704575,
+      "top1_distance_px": 309.7232635757282,
+      "spatial_mean_x": 360.462886987592,
+      "spatial_mean_y": 400.4020758931909,
+      "spatial_std_px": 338.6948048234024
+    },
+    {
+      "pair_id": "DRAM_00010",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 237,
+      "top1_raw_score": 0.021867014467716217,
+      "top1_distance_px": 624.3784909812317,
+      "spatial_mean_x": 425.2348053099433,
+      "spatial_mean_y": 636.4272986746972,
+      "spatial_std_px": 310.9775804614678
+    },
+    {
+      "pair_id": "DRAM_00011",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 241,
+      "top1_raw_score": 0.026544393971562386,
+      "top1_distance_px": 314.82137792723034,
+      "spatial_mean_x": 467.2291006189492,
+      "spatial_mean_y": 640.5022379705812,
+      "spatial_std_px": 272.36570982681326
+    },
+    {
+      "pair_id": "DRAM_00012",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 240,
+      "top1_raw_score": 0.001811174675822258,
+      "top1_distance_px": 668.6751827307486,
+      "spatial_mean_x": 589.5673079385333,
+      "spatial_mean_y": 574.9363243542773,
+      "spatial_std_px": 392.2720130068044
+    },
+    {
+      "pair_id": "DRAM_00013",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 238,
+      "top1_raw_score": 0.0042844428680837154,
+      "top1_distance_px": 706.8129172560444,
+      "spatial_mean_x": 511.3663851528288,
+      "spatial_mean_y": 534.7611483809753,
+      "spatial_std_px": 380.9897310308042
+    },
+    {
+      "pair_id": "DRAM_00014",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 242,
+      "top1_raw_score": 0.007667053956538439,
+      "top1_distance_px": 222.43763170830604,
+      "spatial_mean_x": 576.9917992629381,
+      "spatial_mean_y": 578.0440939273889,
+      "spatial_std_px": 380.67682716405375
+    },
+    {
+      "pair_id": "DRAM_00015",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 240,
+      "top1_raw_score": 0.0014966055750846863,
+      "top1_distance_px": 41.743262929483606,
+      "spatial_mean_x": 550.1698148847252,
+      "spatial_mean_y": 463.80354321004444,
+      "spatial_std_px": 354.32965244575416
+    },
+    {
+      "pair_id": "DRAM_00016",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 235,
+      "top1_raw_score": 0.002275196136906743,
+      "top1_distance_px": 144.7497841103744,
+      "spatial_mean_x": 493.37309583283985,
+      "spatial_mean_y": 541.7467822264724,
+      "spatial_std_px": 334.3691484901721
+    },
+    {
+      "pair_id": "DRAM_00017",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 234,
+      "top1_raw_score": 0.0013715950772166252,
+      "top1_distance_px": 381.6313666353959,
+      "spatial_mean_x": 504.47125671004187,
+      "spatial_mean_y": 476.9098392677282,
+      "spatial_std_px": 352.3210483096849
+    },
+    {
+      "pair_id": "DRAM_00018",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 233,
+      "top1_raw_score": 0.0042844428680837154,
+      "top1_distance_px": 421.4623352092094,
+      "spatial_mean_x": 484.6688714078682,
+      "spatial_mean_y": 461.7879161882248,
+      "spatial_std_px": 378.4625445657016
+    },
+    {
+      "pair_id": "DRAM_00019",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 240,
+      "top1_raw_score": 0.0007868550019338727,
+      "top1_distance_px": 215.47273609438386,
+      "spatial_mean_x": 469.44845999532896,
+      "spatial_mean_y": 495.15077901831387,
+      "spatial_std_px": 375.5009035075899
+    },
+    {
+      "pair_id": "DRAM_00020",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 237,
+      "top1_raw_score": 0.001793860225006938,
+      "top1_distance_px": 563.7202320300381,
+      "spatial_mean_x": 461.06581829564755,
+      "spatial_mean_y": 529.476552979005,
+      "spatial_std_px": 399.93165068720157
+    },
+    {
+      "pair_id": "DRAM_00021",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 234,
+      "top1_raw_score": 0.0003479334118310362,
+      "top1_distance_px": 447.0665498558352,
+      "spatial_mean_x": 499.5024074593827,
+      "spatial_mean_y": 471.37333365331756,
+      "spatial_std_px": 377.2001051792042
+    },
+    {
+      "pair_id": "DRAM_00022",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 242,
+      "top1_raw_score": 0.0012430138885974884,
+      "top1_distance_px": 138.6091627562911,
+      "spatial_mean_x": 499.82168042073073,
+      "spatial_mean_y": 506.0309682137807,
+      "spatial_std_px": 396.940771732142
+    },
+    {
+      "pair_id": "DRAM_00023",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 236,
+      "top1_raw_score": 0.007315343711525202,
+      "top1_distance_px": 470.60864845431814,
+      "spatial_mean_x": 414.49997793546396,
+      "spatial_mean_y": 562.5882155984364,
+      "spatial_std_px": 346.38157378964326
+    },
+    {
+      "pair_id": "DRAM_00024",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 234,
+      "top1_raw_score": 0.0018291170708835125,
+      "top1_distance_px": 417.8666055094616,
+      "spatial_mean_x": 500.04484154939576,
+      "spatial_mean_y": 485.8513831849069,
+      "spatial_std_px": 357.2258718907411
+    },
+    {
+      "pair_id": "DRAM_00025",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 240,
+      "top1_raw_score": 0.0009071317035704851,
+      "top1_distance_px": 486.0046296075789,
+      "spatial_mean_x": 509.7601172025942,
+      "spatial_mean_y": 444.371613427931,
+      "spatial_std_px": 368.1878028685212
+    },
+    {
+      "pair_id": "DRAM_00026",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 228,
+      "top1_raw_score": 0.0023917423095554113,
+      "top1_distance_px": 618.9462819986885,
+      "spatial_mean_x": 541.417523461269,
+      "spatial_mean_y": 452.1744143562637,
+      "spatial_std_px": 385.25344399841435
+    },
+    {
+      "pair_id": "DRAM_00027",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 234,
+      "top1_raw_score": 0.0042654769495129585,
+      "top1_distance_px": 64.93458246574009,
+      "spatial_mean_x": 472.8608752106744,
+      "spatial_mean_y": 510.04581380128104,
+      "spatial_std_px": 369.2560960974891
+    },
+    {
+      "pair_id": "DRAM_00028",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 227,
+      "top1_raw_score": 0.0013448225799947977,
+      "top1_distance_px": 259.96249729528296,
+      "spatial_mean_x": 547.5381590208549,
+      "spatial_mean_y": 452.48970121427675,
+      "spatial_std_px": 353.1821109963901
+    },
+    {
+      "pair_id": "DRAM_00029",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 239,
+      "top1_raw_score": 0.0008843437535688281,
+      "top1_distance_px": 369.1537620016895,
+      "spatial_mean_x": 531.0219504867807,
+      "spatial_mean_y": 491.00251325525807,
+      "spatial_std_px": 371.5618084781853
+    },
+    {
+      "pair_id": "DRAM_00030",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 242,
+      "top1_raw_score": 0.0006031854427419603,
+      "top1_distance_px": 755.5279610974037,
+      "spatial_mean_x": 534.8205375126846,
+      "spatial_mean_y": 492.8741258288868,
+      "spatial_std_px": 370.3882282427446
+    },
+    {
+      "pair_id": "DRAM_00031",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 240,
+      "top1_raw_score": 0.002992331050336361,
+      "top1_distance_px": 628.051351403689,
+      "spatial_mean_x": 528.2920739357869,
+      "spatial_mean_y": 523.2386876133448,
+      "spatial_std_px": 343.08879052108284
+    },
+    {
+      "pair_id": "DRAM_00032",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 227,
+      "top1_raw_score": 0.0014966055750846863,
+      "top1_distance_px": 229.5833182093159,
+      "spatial_mean_x": 528.9318265314173,
+      "spatial_mean_y": 582.7914660719407,
+      "spatial_std_px": 366.6631759404397
+    },
+    {
+      "pair_id": "DRAM_00033",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 237,
+      "top1_raw_score": 0.0007278994889929891,
+      "top1_distance_px": 369.1645974358863,
+      "spatial_mean_x": 503.3106265754317,
+      "spatial_mean_y": 537.5242682726271,
+      "spatial_std_px": 357.8608801490554
+    },
+    {
+      "pair_id": "DRAM_00034",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 228,
+      "top1_raw_score": 0.0010720697464421391,
+      "top1_distance_px": 228.1720841820927,
+      "spatial_mean_x": 480.1639658951166,
+      "spatial_mean_y": 475.37285578871735,
+      "spatial_std_px": 377.739141645122
+    },
+    {
+      "pair_id": "DRAM_00035",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 235,
+      "top1_raw_score": 0.00021887347975280136,
+      "top1_distance_px": 247.3550080350103,
+      "spatial_mean_x": 444.4991952660306,
+      "spatial_mean_y": 506.09238827239557,
+      "spatial_std_px": 349.715885877431
+    },
+    {
+      "pair_id": "DRAM_00036",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 234,
+      "top1_raw_score": 0.007243423257023096,
+      "top1_distance_px": 342.34850664198905,
+      "spatial_mean_x": 501.9642653473164,
+      "spatial_mean_y": 421.29347506987585,
+      "spatial_std_px": 364.50031693284467
+    },
+    {
+      "pair_id": "DRAM_00037",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 239,
+      "top1_raw_score": 0.010757949203252792,
+      "top1_distance_px": 246.0741758088402,
+      "spatial_mean_x": 450.0208149184561,
+      "spatial_mean_y": 512.8312514632373,
+      "spatial_std_px": 378.4974686836114
+    },
+    {
+      "pair_id": "DRAM_00038",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 241,
+      "top1_raw_score": 0.01729670725762844,
+      "top1_distance_px": 410.9117910208954,
+      "spatial_mean_x": 431.94246641802437,
+      "spatial_mean_y": 506.3316069569641,
+      "spatial_std_px": 314.8914295510356
+    },
+    {
+      "pair_id": "DRAM_00039",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 238,
+      "top1_raw_score": 0.00044126829016022384,
+      "top1_distance_px": 408.88690367875563,
+      "spatial_mean_x": 584.5430492555677,
+      "spatial_mean_y": 495.3940802400371,
+      "spatial_std_px": 358.8512911374643
+    },
+    {
+      "pair_id": "DRAM_00040",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 239,
+      "top1_raw_score": 0.004154609981924295,
+      "top1_distance_px": 434.4864785007699,
+      "spatial_mean_x": 439.78160197060254,
+      "spatial_mean_y": 439.36484222303636,
+      "spatial_std_px": 408.8433043123909
+    },
+    {
+      "pair_id": "DRAM_00041",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 238,
+      "top1_raw_score": 0.0008843437535688281,
+      "top1_distance_px": 228.5049233605263,
+      "spatial_mean_x": 576.6360683626224,
+      "spatial_mean_y": 516.7683888940999,
+      "spatial_std_px": 369.99223040571934
+    },
+    {
+      "pair_id": "DRAM_00042",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 232,
+      "top1_raw_score": 0.9997914433479309,
+      "top1_distance_px": 3.8078865529319543,
+      "spatial_mean_x": 752.4784050332042,
+      "spatial_mean_y": 416.39257535005567,
+      "spatial_std_px": 62.10812302133979
+    },
+    {
+      "pair_id": "DRAM_00043",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 245,
+      "top1_raw_score": 0.0009071317035704851,
+      "top1_distance_px": 102.98786336263123,
+      "spatial_mean_x": 483.01564905805753,
+      "spatial_mean_y": 458.14858938532984,
+      "spatial_std_px": 365.7562622365998
+    },
+    {
+      "pair_id": "DRAM_00044",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 241,
+      "top1_raw_score": 0.03922538459300995,
+      "top1_distance_px": 455.6714825397789,
+      "spatial_mean_x": 677.5525859136467,
+      "spatial_mean_y": 439.1393024610558,
+      "spatial_std_px": 256.26420915723276
+    },
+    {
+      "pair_id": "DRAM_00045",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 240,
+      "top1_raw_score": 0.0007868550019338727,
+      "top1_distance_px": 353.1154202240395,
+      "spatial_mean_x": 545.0357968685853,
+      "spatial_mean_y": 533.4877166295767,
+      "spatial_std_px": 408.3730078033867
+    },
+    {
+      "pair_id": "DRAM_00046",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 243,
+      "top1_raw_score": 0.03200589120388031,
+      "top1_distance_px": 325.73685698735414,
+      "spatial_mean_x": 398.4785359871638,
+      "spatial_mean_y": 370.7516201944375,
+      "spatial_std_px": 285.0991932433813
+    },
+    {
+      "pair_id": "DRAM_00047",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 231,
+      "top1_raw_score": 0.006534171290695667,
+      "top1_distance_px": 490.4920998344418,
+      "spatial_mean_x": 386.08769594726095,
+      "spatial_mean_y": 543.5394545546247,
+      "spatial_std_px": 322.82831335847555
+    },
+    {
+      "pair_id": "DRAM_00048",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 246,
+      "top1_raw_score": 0.05032452568411827,
+      "top1_distance_px": 302.56982665163423,
+      "spatial_mean_x": 191.09794112659682,
+      "spatial_mean_y": 607.4543782745109,
+      "spatial_std_px": 267.15687772198635
+    },
+    {
+      "pair_id": "DRAM_00049",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 244,
+      "top1_raw_score": 0.0033613338600844145,
+      "top1_distance_px": 375.90224793156,
+      "spatial_mean_x": 480.3351648584646,
+      "spatial_mean_y": 521.6156147351344,
+      "spatial_std_px": 351.9641277590433
+    },
+    {
+      "pair_id": "DRAM_00050",
+      "split": "train",
+      "architecture": "DRAM",
+      "candidate_count": 237,
+      "top1_raw_score": 0.00031344188028015196,
+      "top1_distance_px": 385.51588812914054,
+      "spatial_mean_x": 529.0333478055604,
+      "spatial_mean_y": 461.06391073031455,
+      "spatial_std_px": 364.664775399277
+    },
+    {
+      "pair_id": "FinFET_00051",
+      "split": "train",
+      "architecture": "FinFET",
+      "candidate_count": 243,
+      "top1_raw_score": 0.0010068848496302962,
+      "top1_distance_px": 183.8001632208198,
+      "spatial_mean_x": 520.6890386176744,
+      "spatial_mean_y": 499.86790182490245,
+      "spatial_std_px": 362.94768776360047
+    },
+    {
+      "pair_id": "FinFET_00052",
+      "split": "train",
+      "architecture": "FinFET",
+      "candidate_count": 239,
+      "top1_raw_score": 0.0032942048273980618,
+      "top1_distance_px": 467.08939187269067,
+      "spatial_mean_x": 565.1508953343987,
+      "spatial_mean_y": 506.20045354257184,
+      "spatial_std_px": 358.83455503297375
+    },
+    {
+      "pair_id": "FinFET_00053",
+      "split": "train",
+      "architecture": "FinFET",
+      "candidate_count": 240,
+      "top1_raw_score": 0.0016162105603143573,
+      "top1_distance_px": 276.9810462829542,
+      "spatial_mean_x": 546.2323850384778,
+      "spatial_mean_y": 454.2883610878646,
+      "spatial_std_px": 375.8919047346151
+    },
+    {
+      "pair_id": "FinFET_00054",
+      "split": "train",
+      "architecture": "FinFET",
+      "candidate_count": 233,
+      "top1_raw_score": 0.0007972517632879317,
+      "top1_distance_px": 245.05611602243272,
+      "spatial_mean_x": 549.5123412444037,
+      "spatial_mean_y": 512.2487463105149,
+      "spatial_std_px": 367.2434284352597
+    },
+    {
+      "pair_id": "FinFET_00055",
+      "split": "train",
+      "architecture": "FinFET",
+      "candidate_count": 244,
+      "top1_raw_score": 0.03202951326966286,
+      "top1_distance_px": 642.2822588239535,
+      "spatial_mean_x": 569.4131235959078,
+      "spatial_mean_y": 516.1317045872999,
+      "spatial_std_px": 320.92635962058563
+    },
+    {
+      "pair_id": "FinFET_00056",
+      "split": "train",
+      "architecture": "FinFET",
+      "candidate_count": 227,
+      "top1_raw_score": 0.0022399749141186476,
+      "top1_distance_px": 338.0658219932917,
+      "spatial_mean_x": 423.64541920924285,
+      "spatial_mean_y": 428.15027515614906,
+      "spatial_std_px": 341.02276999675513
+    },
+    {
+      "pair_id": "FinFET_00057",
+      "split": "train",
+      "architecture": "FinFET",
+      "candidate_count": 235,
+      "top1_raw_score": 0.0009745344868861139,
+      "top1_distance_px": 508.7715597397323,
+      "spatial_mean_x": 452.5736160845803,
+      "spatial_mean_y": 493.5682867655265,
+      "spatial_std_px": 367.37541718842994
+    },
+    {
+      "pair_id": "FinFET_00058",
+      "split": "train",
+      "architecture": "FinFET",
+      "candidate_count": 242,
+      "top1_raw_score": 0.0042654769495129585,
+      "top1_distance_px": 400.40791700464666,
+      "spatial_mean_x": 527.8640431955273,
+      "spatial_mean_y": 430.13366436548125,
+      "spatial_std_px": 404.58456766367493
+    },
+    {
+      "pair_id": "FinFET_00059",
+      "split": "train",
+      "architecture": "FinFET",
+      "candidate_count": 232,
+      "top1_raw_score": 0.00035253085661679506,
+      "top1_distance_px": 599.7403604894371,
+      "spatial_mean_x": 490.306490786803,
+      "spatial_mean_y": 486.4621765689248,
+      "spatial_std_px": 398.46422083939717
+    },
+    {
+      "pair_id": "FinFET_00060",
+      "split": "train",
+      "architecture": "FinFET",
+      "candidate_count": 239,
+      "top1_raw_score": 0.001477102399803698,
+      "top1_distance_px": 186.3236431588863,
+      "spatial_mean_x": 425.6364603387687,
+      "spatial_mean_y": 509.68273933685185,
+      "spatial_std_px": 345.6690357754601
+    },
+    {
+      "pair_id": "FinFET_00061",
+      "split": "train",
+      "architecture": "FinFET",
+      "candidate_count": 236,
+      "top1_raw_score": 0.0004087737179361284,
+      "top1_distance_px": 527.5021326971105,
+      "spatial_mean_x": 538.5760803203692,
+      "spatial_mean_y": 533.6972052640475,
+      "spatial_std_px": 354.69619584993796
+    },
+    {
+      "pair_id": "FinFET_00062",
+      "split": "train",
+      "architecture": "FinFET",
+      "candidate_count": 244,
+      "top1_raw_score": 0.0006920099258422852,
+      "top1_distance_px": 570.328414161525,
+      "spatial_mean_x": 546.7507101737004,
+      "spatial_mean_y": 531.7023500577604,
+      "spatial_std_px": 344.0890124007207
+    },
+    {
+      "pair_id": "FinFET_00063",
+      "split": "train",
+      "architecture": "FinFET",
+      "candidate_count": 245,
+      "top1_raw_score": 0.0006400836282409728,
+      "top1_distance_px": 253.67794543475787,
+      "spatial_mean_x": 472.9627007480045,
+      "spatial_mean_y": 489.461986917648,
+      "spatial_std_px": 384.30098613606685
+    },
+    {
+      "pair_id": "FinFET_00064",
+      "split": "train",
+      "architecture": "FinFET",
+      "candidate_count": 239,
+      "top1_raw_score": 0.001573125715367496,
+      "top1_distance_px": 560.5180639372829,
+      "spatial_mean_x": 504.07036429312893,
+      "spatial_mean_y": 597.8114462588451,
+      "spatial_std_px": 350.0021460308457
+    },
+    {
+      "pair_id": "FinFET_00065",
+      "split": "train",
+      "architecture": "FinFET",
+      "candidate_count": 240,
+      "top1_raw_score": 0.24011866748332977,
+      "top1_distance_px": 334.15939310454826,
+      "spatial_mean_x": 867.8871447202242,
+      "spatial_mean_y": 828.9421775464659,
+      "spatial_std_px": 241.7811203875491
+    },
+    {
+      "pair_id": "FinFET_00066",
+      "split": "train",
+      "architecture": "FinFET",
+      "candidate_count": 234,
+      "top1_raw_score": 0.002275196136906743,
+      "top1_distance_px": 225.6778677673112,
+      "spatial_mean_x": 557.0116497350277,
+      "spatial_mean_y": 462.51612973489614,
+      "spatial_std_px": 376.294255860509
+    },
+    {
+      "pair_id": "FinFET_00067",
+      "split": "train",
+      "architecture": "FinFET",
+      "candidate_count": 232,
+      "top1_raw_score": 0.001075426465831697,
+      "top1_distance_px": 643.3167959877933,
+      "spatial_mean_x": 544.014298874193,
+      "spatial_mean_y": 496.08248893183344,
+      "spatial_std_px": 376.774587296084
+    },
+    {
+      "pair_id": "FinFET_00068",
+      "split": "train",
+      "architecture": "FinFET",
+      "candidate_count": 242,
+      "top1_raw_score": 0.002275196136906743,
+      "top1_distance_px": 752.650317212449,
+      "spatial_mean_x": 536.9374525601696,
+      "spatial_mean_y": 416.1566138335255,
+      "spatial_std_px": 360.64725522685404
+    },
+    {
+      "pair_id": "FinFET_00069",
+      "split": "train",
+      "architecture": "FinFET",
+      "candidate_count": 242,
+      "top1_raw_score": 0.0013448225799947977,
+      "top1_distance_px": 330.1431507694806,
+      "spatial_mean_x": 486.0591912545619,
+      "spatial_mean_y": 476.27135365515517,
+      "spatial_std_px": 384.721702119942
+    },
+    {
+      "pair_id": "FinFET_00070",
+      "split": "train",
+      "architecture": "FinFET",
+      "candidate_count": 233,
+      "top1_raw_score": 0.0016120716463774443,
+      "top1_distance_px": 631.8563919119597,
+      "spatial_mean_x": 393.04415177939336,
+      "spatial_mean_y": 520.6884012584562,
+      "spatial_std_px": 395.92407837935656
+    },
+    {
+      "pair_id": "FinFET_00071",
+      "split": "validation",
+      "architecture": "FinFET",
+      "candidate_count": 245,
+      "top1_raw_score": 0.0005434054182842374,
+      "top1_distance_px": 398.8038364910749,
+      "spatial_mean_x": 513.5300147659816,
+      "spatial_mean_y": 509.5077062536917,
+      "spatial_std_px": 364.46020714712006
+    },
+    {
+      "pair_id": "FinFET_00072",
+      "split": "validation",
+      "architecture": "FinFET",
+      "candidate_count": 235,
+      "top1_raw_score": 0.007344255223870277,
+      "top1_distance_px": 463.93372371492893,
+      "spatial_mean_x": 455.31190603210183,
+      "spatial_mean_y": 503.1351186178138,
+      "spatial_std_px": 364.01838051307914
+    },
+    {
+      "pair_id": "FinFET_00073",
+      "split": "validation",
+      "architecture": "FinFET",
+      "candidate_count": 242,
+      "top1_raw_score": 0.0009725142735987902,
+      "top1_distance_px": 510.15536849081576,
+      "spatial_mean_x": 504.11109933012193,
+      "spatial_mean_y": 488.5611226517992,
+      "spatial_std_px": 382.6425179962459
+    },
+    {
+      "pair_id": "FinFET_00074",
+      "split": "validation",
+      "architecture": "FinFET",
+      "candidate_count": 225,
+      "top1_raw_score": 0.001975242979824543,
+      "top1_distance_px": 311.74107846095615,
+      "spatial_mean_x": 544.0074989909464,
+      "spatial_mean_y": 461.8422953942329,
+      "spatial_std_px": 369.7383601556035
+    },
+    {
+      "pair_id": "FinFET_00075",
+      "split": "validation",
+      "architecture": "FinFET",
+      "candidate_count": 244,
+      "top1_raw_score": 0.05032452568411827,
+      "top1_distance_px": 337.322545940825,
+      "spatial_mean_x": 431.0368608839124,
+      "spatial_mean_y": 614.7867444001266,
+      "spatial_std_px": 277.05382627984767
+    },
+    {
+      "pair_id": "FinFET_00076",
+      "split": "validation",
+      "architecture": "FinFET",
+      "candidate_count": 231,
+      "top1_raw_score": 0.0006920099258422852,
+      "top1_distance_px": 269.1031400782979,
+      "spatial_mean_x": 571.8762537079954,
+      "spatial_mean_y": 449.99623653987544,
+      "spatial_std_px": 378.50072954546596
+    },
+    {
+      "pair_id": "FinFET_00077",
+      "split": "validation",
+      "architecture": "FinFET",
+      "candidate_count": 228,
+      "top1_raw_score": 0.004178355447947979,
+      "top1_distance_px": 660.7590332337501,
+      "spatial_mean_x": 354.58358242266365,
+      "spatial_mean_y": 552.6030950803597,
+      "spatial_std_px": 391.2475394762442
+    },
+    {
+      "pair_id": "FinFET_00078",
+      "split": "validation",
+      "architecture": "FinFET",
+      "candidate_count": 230,
+      "top1_raw_score": 0.0010657066013664007,
+      "top1_distance_px": 197.32840647002652,
+      "spatial_mean_x": 507.61654335130385,
+      "spatial_mean_y": 483.3216012261575,
+      "spatial_std_px": 389.9527583275151
+    },
+    {
+      "pair_id": "FinFET_00079",
+      "split": "validation",
+      "architecture": "FinFET",
+      "candidate_count": 236,
+      "top1_raw_score": 0.0015799873508512974,
+      "top1_distance_px": 821.7922486857613,
+      "spatial_mean_x": 471.74177416255714,
+      "spatial_mean_y": 525.7814110957945,
+      "spatial_std_px": 381.86331485517707
+    },
+    {
+      "pair_id": "FinFET_00080",
+      "split": "validation",
+      "architecture": "FinFET",
+      "candidate_count": 244,
+      "top1_raw_score": 0.5989389419555664,
+      "top1_distance_px": 349.560438264973,
+      "spatial_mean_x": 498.30492015370476,
+      "spatial_mean_y": 752.6917173527662,
+      "spatial_std_px": 103.09257650035525
+    },
+    {
+      "pair_id": "FinFET_00081",
+      "split": "validation",
+      "architecture": "FinFET",
+      "candidate_count": 235,
+      "top1_raw_score": 0.0008843437535688281,
+      "top1_distance_px": 82.79190781712909,
+      "spatial_mean_x": 508.6053045204077,
+      "spatial_mean_y": 493.48661712595845,
+      "spatial_std_px": 375.7821230786636
+    },
+    {
+      "pair_id": "FinFET_00082",
+      "split": "validation",
+      "architecture": "FinFET",
+      "candidate_count": 236,
+      "top1_raw_score": 0.0014966055750846863,
+      "top1_distance_px": 167.53656317353534,
+      "spatial_mean_x": 455.6490831454495,
+      "spatial_mean_y": 528.0718206978618,
+      "spatial_std_px": 361.6948299096611
+    },
+    {
+      "pair_id": "FinFET_00083",
+      "split": "validation",
+      "architecture": "FinFET",
+      "candidate_count": 218,
+      "top1_raw_score": 0.0008293504943139851,
+      "top1_distance_px": 666.4731802555899,
+      "spatial_mean_x": 339.3739560773026,
+      "spatial_mean_y": 490.8933820421406,
+      "spatial_std_px": 365.7289583238909
+    },
+    {
+      "pair_id": "FinFET_00084",
+      "split": "validation",
+      "architecture": "FinFET",
+      "candidate_count": 239,
+      "top1_raw_score": 0.0009745344868861139,
+      "top1_distance_px": 205.11582094026778,
+      "spatial_mean_x": 459.36557018772635,
+      "spatial_mean_y": 508.20422259836766,
+      "spatial_std_px": 374.512805142616
+    },
+    {
+      "pair_id": "FinFET_00085",
+      "split": "validation",
+      "architecture": "FinFET",
+      "candidate_count": 235,
+      "top1_raw_score": 0.00047096089110709727,
+      "top1_distance_px": 126.85621782159517,
+      "spatial_mean_x": 476.1598140550938,
+      "spatial_mean_y": 512.4193248611783,
+      "spatial_std_px": 376.7763505401478
+    },
+    {
+      "pair_id": "FinFET_00086",
+      "split": "hard_test",
+      "architecture": "FinFET",
+      "candidate_count": 231,
+      "top1_raw_score": 0.014572934247553349,
+      "top1_distance_px": 326.08357824336997,
+      "spatial_mean_x": 423.9018202859396,
+      "spatial_mean_y": 358.9700946530507,
+      "spatial_std_px": 301.4420712847592
+    },
+    {
+      "pair_id": "FinFET_00087",
+      "split": "hard_test",
+      "architecture": "FinFET",
+      "candidate_count": 241,
+      "top1_raw_score": 0.0402410551905632,
+      "top1_distance_px": 611.2074116042769,
+      "spatial_mean_x": 360.92778618146997,
+      "spatial_mean_y": 722.509901622878,
+      "spatial_std_px": 317.3810588666622
+    },
+    {
+      "pair_id": "FinFET_00088",
+      "split": "hard_test",
+      "architecture": "FinFET",
+      "candidate_count": 230,
+      "top1_raw_score": 0.00017020624363794923,
+      "top1_distance_px": 335.7327806455604,
+      "spatial_mean_x": 479.9426697227967,
+      "spatial_mean_y": 508.73982013413917,
+      "spatial_std_px": 369.86501384011217
+    },
+    {
+      "pair_id": "FinFET_00089",
+      "split": "hard_test",
+      "architecture": "FinFET",
+      "candidate_count": 237,
+      "top1_raw_score": 0.0042844428680837154,
+      "top1_distance_px": 528.6515865860993,
+      "spatial_mean_x": 485.8404368901372,
+      "spatial_mean_y": 526.3356319282193,
+      "spatial_std_px": 320.9085510133939
+    },
+    {
+      "pair_id": "FinFET_00090",
+      "split": "hard_test",
+      "architecture": "FinFET",
+      "candidate_count": 224,
+      "top1_raw_score": 0.0008843437535688281,
+      "top1_distance_px": 435.6472196628827,
+      "spatial_mean_x": 523.8004289077822,
+      "spatial_mean_y": 489.7451971227632,
+      "spatial_std_px": 376.38960210141465
+    },
+    {
+      "pair_id": "FinFET_00091",
+      "split": "hard_test",
+      "architecture": "FinFET",
+      "candidate_count": 234,
+      "top1_raw_score": 0.004695599433034658,
+      "top1_distance_px": 415.70001202790456,
+      "spatial_mean_x": 447.55856969469187,
+      "spatial_mean_y": 486.5598015827383,
+      "spatial_std_px": 351.66971125115913
+    },
+    {
+      "pair_id": "FinFET_00092",
+      "split": "hard_test",
+      "architecture": "FinFET",
+      "candidate_count": 238,
+      "top1_raw_score": 0.0008340866188518703,
+      "top1_distance_px": 246.02946977953678,
+      "spatial_mean_x": 515.4533326480786,
+      "spatial_mean_y": 491.6111108103765,
+      "spatial_std_px": 349.4813058017684
+    },
+    {
+      "pair_id": "FinFET_00093",
+      "split": "hard_test",
+      "architecture": "FinFET",
+      "candidate_count": 241,
+      "top1_raw_score": 0.0024138325825333595,
+      "top1_distance_px": 517.585258677254,
+      "spatial_mean_x": 474.50943684456513,
+      "spatial_mean_y": 551.6469050120733,
+      "spatial_std_px": 343.79215387030087
+    },
+    {
+      "pair_id": "FinFET_00094",
+      "split": "hard_test",
+      "architecture": "FinFET",
+      "candidate_count": 237,
+      "top1_raw_score": 0.0015156276058405638,
+      "top1_distance_px": 462.91089855392255,
+      "spatial_mean_x": 510.8085785693785,
+      "spatial_mean_y": 523.6265651012727,
+      "spatial_std_px": 362.487289977493
+    },
+    {
+      "pair_id": "FinFET_00095",
+      "split": "hard_test",
+      "architecture": "FinFET",
+      "candidate_count": 242,
+      "top1_raw_score": 0.005106306169182062,
+      "top1_distance_px": 389.5028883076479,
+      "spatial_mean_x": 463.3713372714258,
+      "spatial_mean_y": 518.8074390835345,
+      "spatial_std_px": 393.16946343123084
+    },
+    {
+      "pair_id": "FinFET_00096",
+      "split": "hard_test",
+      "architecture": "FinFET",
+      "candidate_count": 234,
+      "top1_raw_score": 0.0014966055750846863,
+      "top1_distance_px": 740.7432078662619,
+      "spatial_mean_x": 466.52749132182515,
+      "spatial_mean_y": 471.59289381081805,
+      "spatial_std_px": 390.52232964515684
+    },
+    {
+      "pair_id": "FinFET_00097",
+      "split": "hard_test",
+      "architecture": "FinFET",
+      "candidate_count": 232,
+      "top1_raw_score": 0.0004455123853404075,
+      "top1_distance_px": 374.41220599761436,
+      "spatial_mean_x": 548.1384086735609,
+      "spatial_mean_y": 501.664665961055,
+      "spatial_std_px": 386.40414493688894
+    },
+    {
+      "pair_id": "FinFET_00098",
+      "split": "hard_test",
+      "architecture": "FinFET",
+      "candidate_count": 238,
+      "top1_raw_score": 0.001811174675822258,
+      "top1_distance_px": 556.5271781323892,
+      "spatial_mean_x": 449.10846064622905,
+      "spatial_mean_y": 522.7752354893021,
+      "spatial_std_px": 369.1188481122633
+    },
+    {
+      "pair_id": "FinFET_00099",
+      "split": "hard_test",
+      "architecture": "FinFET",
+      "candidate_count": 232,
+      "top1_raw_score": 0.0062818932346999645,
+      "top1_distance_px": 667.7278637289296,
+      "spatial_mean_x": 371.4532795014061,
+      "spatial_mean_y": 446.5788310307447,
+      "spatial_std_px": 362.71939468552176
+    },
+    {
+      "pair_id": "FinFET_00100",
+      "split": "hard_test",
+      "architecture": "FinFET",
+      "candidate_count": 241,
+      "top1_raw_score": 0.020576342940330505,
+      "top1_distance_px": 690.0394916234867,
+      "spatial_mean_x": 625.049318650601,
+      "spatial_mean_y": 588.5991326217879,
+      "spatial_std_px": 352.1324457446704
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "generator_score": 0.002486493671312928,
+  "generator_rank_normalized": 0.002028122777119279,
+  "context_10": 0.21207569539546967,
+  "context_20": 0.0006766931619495153,
+  "context_40": 0.00046823828597553074,
+  "gradient_score": 0.00044129646266810596,
+  "orientation_score": 0.0021159606985747814,
+  "contrast_score": 0.1186937689781189,
+  "context_gain_20": 0.000766684184782207,
+  "context_gain_40": 0.0016165173146873713,
+  "generator_context_gap": 0.5618771910667419,
+  "context_consistency": 0.09675328433513641,
+  "generator_ncc": 0.0,
+  "generator_dog": 0.0,
+  "generator_gradient": 0.0,
+  "generator_edge": 0.0,
+  "generator_frequency": 0.0
+}

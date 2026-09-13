@@ -1,0 +1,44 @@
+{
+  "architecture": "DRAM",
+  "search_size": [
+    1000,
+    1000
+  ],
+  "reference_size": [
+    100,
+    100
+  ],
+  "target_center_xy": [
+    172,
+    535
+  ],
+  "scale_relationship_nominal": 10.0,
+  "hard_case": false,
+  "geometry": {
+    "pitch_x": 29,
+    "pitch_y": 37,
+    "line_width_x": 6,
+    "line_width_y": 6,
+    "rotation_deg": -4.268734353532956
+  },
+  "reference_imaging": {
+    "blur_sigma": 0.3803840062171748,
+    "gaussian_sigma": 4.612126277633736,
+    "poisson_scale": 48,
+    "speckle": 0.010855979372140705,
+    "edge_brightening": 0.25020072304220825,
+    "gain": 1.0584782100427281
+  },
+  "search_imaging": {
+    "blur_sigma": 1.0051543413174546,
+    "gaussian_sigma": 7.157225868786023,
+    "poisson_scale": 30,
+    "speckle": 0.01600650941591196,
+    "edge_brightening": 0.16069865077832757,
+    "gain": 0.9557122718691683
+  },
+  "generator_version": "0.1.0",
+  "seed": 1146299401,
+  "pair_id": "DRAM_00040",
+  "split": "train"
+}
